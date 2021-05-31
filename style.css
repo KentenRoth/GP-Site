@@ -54,4 +54,14 @@ body {
   max-width: 500px;
 }
 
+.images {
+  margin-bottom: 20px;
+}
+.images img {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  width: 500px;
+}
+
 /*# sourceMappingURL=style.css.map */

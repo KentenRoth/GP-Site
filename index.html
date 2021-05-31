@@ -27,7 +27,13 @@
 						<p>
 							The automated garden is a simple setup that will
 							track the soil's moisture level, and when it gets
-							low, it will trigger motors to water the plant.
+							too low, it will trigger motors to water the plant.
+							I use a raspberry pi 4 8GB to run the code, control
+							everything, and use a raspberry pi 2b+ as an SQL
+							server. Every hour the moisture levels are checked,
+							and that data is sent to the other raspberry pi to
+							be stored. Also, when the water motors turn on, the
+							date and time are stored on the server.
 						</p>
 					</div>
 					<div class="heading">
@@ -122,7 +128,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="pictures"></div>
+			<div class="pictures">
+				<div class="images">
+					<img src="/images/AG-Full.JPG" />
+					<img src="/images/AG-Pi.JPG" />
+					<img src="/images/AG-Top.JPG" />
+				</div>
+			</div>
 		</div>
 
 		<script src="/script.js" async defer></script>
