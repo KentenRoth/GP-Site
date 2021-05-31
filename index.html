@@ -15,6 +15,114 @@
 					<h1>Automated Garden</h1>
 				</div>
 			</div>
+			<div class="about">
+				<div class="container">
+					<div class="about-title">
+						<h1>About This Project</h1>
+					</div>
+					<div class="heading">
+						<h2>What Does It Do?</h2>
+					</div>
+					<div class="secondary-content">
+						<p>
+							The automated garden is a simple setup that will
+							track the soil's moisture level, and when it gets
+							low, it will trigger motors to water the plant.
+						</p>
+					</div>
+					<div class="heading">
+						<h2 class="heading">What I Used</h2>
+					</div>
+					<div class="list-content">
+						<ul>
+							<li>2 Raspberry Pi</li>
+							<li>ADS1115 Chip</li>
+							<li>JBtek Breadboard power supply</li>
+							<li>4 Switch Relay</li>
+							<li>2 Bread boards</li>
+							<li>2 Capacitive soil mostuire sensors</li>
+							<li>2 5v Water Motors</li>
+							<li>Clear vinyl tubing</li>
+							<li>6 indoor grow lights (LED)</li>
+							<li>2 24 inch planters</li>
+						</ul>
+					</div>
+					<div class="heading">
+						<h2>Languages Used</h2>
+					</div>
+					<div class="list-content">
+						<ul>
+							<li>NodeJS</li>
+							<li>Express</li>
+							<li>Websockets</li>
+							<li>HTML</li>
+							<li>JS</li>
+							<li>CSS</li>
+						</ul>
+					</div>
+					<div class="heading">
+						<h2>The Basics</h2>
+					</div>
+					<div class="secondary-content">
+						<p>
+							This project was something that I thought would be
+							simple but turned into something a lot more. I
+							wanted to use NodeJS, and there is not much
+							information out there on using Node with a raspberry
+							pi. After some digging, I was able to find different
+							NPM libraries to help me with this project. I did
+							not feel that any of the libraries had
+							well-developed documentation, so there was some
+							trial and error to get things working.
+						</p>
+						<p>
+							I use one library to send signals from the GPIO pins
+							and one library to use the ADS1115 chip. The GPIO
+							pins power the breadboard that runs the ADS1115
+							chip. I could have had everything running off the
+							JBtek power supply but did not want the breadboard
+							to feel clustered. Also, the GPIO pins will get the
+							data from the ADS1115 chip and turn the relay
+							switches on and off. The JBtek power supply would
+							give power to the water motors and the moisture
+							sensors.
+						</p>
+						<p>
+							When getting readings from the sensors, I would get
+							numbers between 1300 and 2500. The lower the number,
+							the more moisture that was in the soil. This messed
+							with me a little because, in my mind, it should have
+							been the opposite. I did not include, but would
+							when/if I rebuild this project, and do it on a large
+							scale, would be to add checks to ensure the sensors
+							are working as expected. I would need to monitor the
+							sensor readings to ensure it would not keep watering
+							because the sensor was faulty.
+						</p>
+					</div>
+					<div class="heading">
+						<h2>Why Did I Build This?</h2>
+					</div>
+					<div class="secondary-content">
+						<p>
+							The main reason for this project was to do something
+							with the raspberry pi's I had sitting around
+							collecting dust. I enjoy doing things in the garden,
+							but I can only do that for part of the year, and
+							sometimes in the winter months, fresh lettuce or
+							herbs would be nice. I also wanted to use this time
+							to get a better understanding of SQL and Websockets.
+							This is the first project that I have put together
+							using MySQL or Websockets, so I enjoyed learning
+							these things. I learned other things along the way,
+							like soldering, breadboards, and the GPIO pins on
+							the raspberry pi, but the coding portion was my main
+							focus for learning.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="pictures"></div>
 		</div>
 
 		<script src="/script.js" async defer></script>
